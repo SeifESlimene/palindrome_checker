@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        height: 100vh;
+        font-family: "Roboto Mono", monospace;
+        font-size: 8px;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #palindrome {
+        padding: 5px;
+        margin: 0;
+        border: 0;
+        height: 5px;
+        flex: 1 0 30%;
+      }
+      .pal-container {
+        padding: 5px;
+        background-color: black;
+        color: #fff;
+        border: 1px solid #000;
+        width: 100%;
+      }
+      .check-button {
+        font-family: "Roboto Mono", monospace;
+        margin-left: 5px;
+        background-color: #fff;
+        border: 1px solid #fff;
+        padding: 0px 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 10px;
+      }
+      #result {
+        padding: 10px 0px 0px;
+      }
+      .title {
+        padding: 0px;
+        width: 100%;
+        border: 1px solid #000;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p style="text-align: center">Palindrome Checker</p>
+      </div>
+      <div class="pal-container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          "
+        >
+          <label for="palindrome">Enter Your Word :&nbsp;</label>
+          <input type="text" name="palindrome" id="palindrome" />
+            <button class="check-button" onclick="palindrome()">Check</button>
+        </div>
+        <p id="result">
+          <span>Your Result Is :&nbsp;</span><span id="result-fn"></span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
